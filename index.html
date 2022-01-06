@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: black;
+        }
+        #acesa{
+            display: none;
+        }
+        .imagem{
+            width: 80%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            background-color:#676a71;
+            margin-top: 20px;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 15px;
+        }
+        .botao{
+            width: 80%;
+            display: block;
+            text-align: center;
+            margin: auto;
+            height: 70px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 15px;
+            background-color:#676a71;
+            
+        }
+        img{
+            width: 250px;
+            
+            
+        }
+        button{
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding: 5px;
+            border: solid 0px
+
+        }
+        
+        #ac{
+            margin-right: -3px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        #ac:hover{
+            background-color: rgba(0, 128, 0, 0.541);
+        }
+        #ap{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #ap:hover{
+            background-color: rgba(255, 0, 0, 0.493);
+        }
+        
+    </style>
+    <!--background-color:#676a71;-->
+    <div class="imagem">
+        <img id="acesa" src="img/acesa01.jpg" alt="">
+        <img id="apagada" src="img/apagada02.jpg" alt="">
+    </div>
+    <div class="botao">
+        
+        <button id="ac" onclick="acender()">LIGAR</button>
+     
+        <button id="ap" onclick="apagar()">DESLIGAR</button>
+           
+    </div>
+    <script>
+        var LampadaAcesa = document.getElementById("acesa");
+
+        var LampadaApagada = document.getElementById("apagada");
+
+        function acender(){
+            LampadaAcesa.style.display = "inline-block"
+            LampadaApagada.style.display = "none"
+        }
+        function apagar(){
+            LampadaApagada.style.display = "inline-block"
+            LampadaAcesa.style.display = "none"
+        }
+    </script>
+    
+<a href=""></a>    
+</body>
+</html>
